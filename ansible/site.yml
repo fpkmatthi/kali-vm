@@ -1,0 +1,9 @@
+---
+- name: Configure Kali VM
+  hosts: all
+  become: true
+  roles:
+    - role: config       # local role under ./roles/
+      # vars:            # (optional) role vars here
+      #   example_var: foo
+
