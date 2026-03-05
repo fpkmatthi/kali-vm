@@ -10,6 +10,16 @@ Currently there are two build methods are possible:
 Either way, the build actually happens from within a virtual machine that is created on-the-fly by the build tool [debos](https://github.com/go-debos/debos).
 _Debos uses [fakemachine](https://github.com/go-debos/fakemachine) under the hood, which in turn relies on QEMU/KVM._
 
+## Quick
+
+Create `./ansible/group_vars/all.yml` with vars from `./ansible/roles/config/defaults/main.yml`
+
+```bash
+./custom-build.sh
+./custom-config-ssh.sh
+./custom-absible.sh
+```
+
 ## Prerequisites
 
 Make sure that the git repository is cloned locally:
